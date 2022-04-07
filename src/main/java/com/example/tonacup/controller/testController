@@ -1,4 +1,4 @@
-package com.example.tonacup;
+package com.example.tonacup.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,7 +7,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class testController {
     @GetMapping("/home")
     public String getHome(){
-
         return "Hello World!";
+    }
+    @GetMapping("/home2")
+    public void getHome2(){
+        System.out.println("test");
     }
 }
