@@ -1,4 +1,4 @@
-package com.example.tonacup;
+package com.tonacup.tonacup;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

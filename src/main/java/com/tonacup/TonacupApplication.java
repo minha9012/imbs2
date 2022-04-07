@@ -1,10 +1,10 @@
-package com.example.tonacup;
+package com.tonacup;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
-@ComponentScan(basePackages={"com.example.tonacup.controller"})
+@ComponentScan(basePackages={"com.tonacup.controller"})
 @SpringBootApplication
 public class TonacupApplication {
 
