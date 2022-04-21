@@ -29,7 +29,7 @@ public class UserService {
     }
 
     public Optional<User> findId(Long userId) {
-        log.info("class:{}",getClass());
+        log.info("class:{}", getClass());
         log.info("userId:{}", userId);
         return userRepository.findById(userId);
     }

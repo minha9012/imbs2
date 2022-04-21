@@ -25,16 +25,16 @@ public class UserController {
     @GetMapping
     @ResponseBody
     public List<User> list() {
+        //TODO : 엔티티 바로 반환X API DTO 사용
         return userService.findUsers();
     }
 
     /**
      * 등록된 유저 id로 조회
-     *
      */
     @GetMapping("/{userId}")
     public Optional<User> searchId(@PathVariable Long userId) {
-        //TODO : Long 검증
+        //TODO : Long 검증, 엔티티 바로 반환X API DTO 사용
         return userService.findId(userId);
     }
     /*
